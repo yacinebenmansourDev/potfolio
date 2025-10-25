@@ -1,52 +1,53 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "Project One",
+    title: "Boutique Escale",
     description:
-      "A short description about this project, explaining what it does and its main features.",
-    image: "/placeholder-project.png",
-    tech: ["Next.js", "TypeScript", "TailwindCSS"],
+      "Boutique Escale is a modern e-commerce platform featuring both a responsive website and a mobile app, designed to provide a seamless shopping experience with elegant UI, smooth navigation, and real-time inventory management which is a private web app.",
+    image: "/escale.jpg",
+    tech: ["React.js", "Next.js", "React Native", "supabase"],
   },
   {
     title: "Project Two",
     description:
       "A sleek and modern app designed to demonstrate advanced UI and performance.",
-    image: "/placeholder-project.png",
+    image: "/escale.jpg",
     tech: ["React", "Supabase", "Node.js"],
   },
   {
     title: "Project Three",
     description:
       "An interactive dashboard built for visualizing data with clean animations.",
-    image: "/placeholder-project.png",
+    image: "/escale.jpg",
     tech: ["Vite", "Recharts", "Shadcn/UI"],
   },
   {
     title: "Project Four",
     description:
       "A powerful API-integrated web app showcasing seamless backend connectivity.",
-    image: "/placeholder-project.png",
+    image: "/escale.jpg",
     tech: ["Express", "MongoDB", "JWT"],
   },
   {
     title: "Project Five",
     description:
       "A portfolio website with elegant transitions, smooth scrolling, and minimalism.",
-    image: "/placeholder-project.png",
+    image: "/escale.jpg",
     tech: ["Next.js", "Framer Motion", "TailwindCSS"],
   },
   {
     title: "Project Six",
     description:
       "A mobile-friendly PWA offering dynamic offline support and fast performance.",
-    image: "/placeholder-project.png",
+    image: "/escale.jpg",
     tech: ["PWA", "React Query", "Zustand"],
   },
 ];
@@ -68,7 +69,6 @@ export default function ProjectsSection() {
         >
           Featured Projects
         </motion.h2>
-
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -78,8 +78,8 @@ export default function ProjectsSection() {
           A selection of my favorite work — blending design, performance, and
           modern web technologies.
         </motion.p>
-
         {/* Projects Grid */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <motion.div
@@ -90,20 +90,22 @@ export default function ProjectsSection() {
               viewport={{ once: true }}
             >
               <Card className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300">
-                <CardHeader className="p-0 relative">
-                  <div className="relative h-52 overflow-hidden">
+                {/* === CORRECTED: Image on Top, Full Width === */}
+
+                <CardContent className=" space-y-4">
+                  <div className="relative h-52 w-full overflow-hidden rounded-t-2xl">
                     <Image
-                      src={project.image}
+                      src={project.image} // Make sure the file exists in /public
                       alt={project.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      unoptimized
+                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
                   </div>
-                </CardHeader>
+                  {/* === CORRECTED: Title Below Image === */}
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">
+                    {project.title}
+                  </h3>
 
-                <CardContent className="p-6 space-y-4">
                   <p className="text-sm text-neutral-700 dark:text-neutral-300 text-left">
                     {project.description}
                   </p>
@@ -128,13 +130,6 @@ export default function ProjectsSection() {
                     >
                       <ExternalLink size={16} />
                       Live Demo
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="border-white/10 text-white hover:bg-white/10 rounded-full flex items-center gap-2 transition-transform hover:scale-105"
-                    >
-                      <Github size={16} />
-                      GitHub
                     </Button>
                   </div>
                 </CardContent>
