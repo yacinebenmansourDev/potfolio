@@ -1,28 +1,11 @@
 # 👋 Mohamed Yacine Benmansour – Portfolio
 
-![Header](https://img.shields.io/badge/Portfolio-FullStack%20Developer-blue?style=for-the-badge&logo=react)
-![Website](https://img.shields.io/badge/Website-Online-green?style=for-the-badge)
-![Freelancer](https://img.shields.io/badge/Freelancer-Available-orange?style=for-the-badge)
-
 Hi there! I'm **Mohamed Yacine Benmansour**, a passionate **Full-Stack Developer** from Algeria. I specialize in **React, Next.js, React Native, Electron, Node.js**, and modern database solutions like **MongoDB** and **PostgreSQL**.  
 
 I also run **Atome**, a development company, and create content for tech enthusiasts. I turn **Figma designs into functional apps** and build **beautiful, scalable digital experiences**.
 
 ---
 
-## 🛠 Technologies & Skills
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React Native](https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white)
-
----
 
 ## 💻 Projects
 
@@ -36,7 +19,7 @@ Check out my portfolio: [🌐 Website](https://your-portfolio-url.com)
 
 I’m always open to **freelance work, collaborations, or discussions**!  
 
-- **Email:** your-email@example.com  
+- **Email:** yacinebenmansourpro@gmail.com  
 - **Website:** [Portfolio](https://your-portfolio-url.com)
 
 ---
