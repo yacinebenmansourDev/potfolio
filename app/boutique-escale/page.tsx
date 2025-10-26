@@ -6,10 +6,9 @@ import Link from "next/link";
 import { FaApple, FaGlobe, FaGooglePlay } from "react-icons/fa";
 
 import Footer from "@/components/Footer";
-import ZLayoutSection from "@/components/ZLayoutSection";
 import { ArrowBigLeft } from "lucide-react";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
