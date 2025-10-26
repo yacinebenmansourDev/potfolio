@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       "react-hook-form.com",
       "avatars.githubusercontent.com",
       "www.vectorlogo.zone",
+      "assets.aceternity.com",
     ],
   },
 };

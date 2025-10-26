@@ -1,21 +1,10 @@
 "use client";
-import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
-  IconBrandX,
   IconBrandYoutube,
-  IconCode,
-  IconExchange,
-  IconFolderCode,
-  IconHome,
-  IconMail,
-  IconMoonStars,
-  IconNewSection,
-  IconTerminal2,
-  IconTools,
 } from "@tabler/icons-react";
 
 export function FloatingDockDemo() {

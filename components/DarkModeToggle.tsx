@@ -41,7 +41,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-4 right-4 z-50 h-12 w-12 rounded-full bg-white dark:bg-neutral-900 shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110"
+      className="fixed top-4 right-4 z-50 h-12 w-12 rounded-full bg-white dark:bg-neutral-900 shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer"
       aria-label="Toggle Dark Mode"
     >
       {isDark ? (

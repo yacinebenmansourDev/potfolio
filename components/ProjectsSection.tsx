@@ -5,15 +5,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
-import Link from "next/link";
+
+import { useRouter } from "next/navigation";
 
 const projects = [
   {
     title: "Boutique Escale",
     description:
       "Boutique Escale is a modern e-commerce platform featuring both a responsive website and a mobile app, designed to provide a seamless shopping experience with elegant UI, smooth navigation, and real-time inventory management which is a private web app.",
-    image: "/escale.jpg",
-    tech: ["React.js", "Next.js", "React Native", "supabase"],
+    image: "/dark.png",
+    tech: ["Next.js", "Expo", "supabase"],
+    href: "/boutique-escale",
   },
   {
     title: "Project Two",
@@ -53,6 +55,7 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
+  const router = useRouter();
   return (
     <section
       id="projects"
@@ -93,12 +96,12 @@ export default function ProjectsSection() {
                 {/* === CORRECTED: Image on Top, Full Width === */}
 
                 <CardContent className=" space-y-4">
-                  <div className="relative h-52 w-full overflow-hidden rounded-t-2xl">
+                  <div className="relative h-78 w-full ">
                     <Image
                       src={project.image} // Make sure the file exists in /public
                       alt={project.title}
                       fill
-                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                      className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105 "
                     />
                   </div>
                   {/* === CORRECTED: Title Below Image === */}
@@ -126,10 +129,11 @@ export default function ProjectsSection() {
                   <div className="flex gap-3 pt-2">
                     <Button
                       variant="default"
-                      className="bg-slate-800 hover:bg-slate-700 text-white rounded-full flex items-center gap-2 transition-transform hover:scale-105"
+                      className="bg-slate-800 hover:bg-slate-700 text-white rounded-full flex items-center gap-2 transition-transform hover:scale-105 cursor-pointer"
+                      onClick={() => router.push(`${project.href}`)}
                     >
                       <ExternalLink size={16} />
-                      Live Demo
+                      Visit
                     </Button>
                   </div>
                 </CardContent>

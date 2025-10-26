@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 // We import the specific event types from 'react'
-import React, { useState, ChangeEvent, FormEvent } from "react";
-import { fromHalfFloat } from "three/src/extras/DataUtils.js";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 export default function ContactSection() {
   const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
