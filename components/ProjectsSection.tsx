@@ -10,7 +10,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "GyroPlayer",
-    image: "/gyroplayer.jpg",
+    image: "/gyroplayer.JPG",
     href: "https://gyroplayer.vercel.app/",
   },
   {
