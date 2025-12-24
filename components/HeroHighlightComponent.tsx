@@ -17,7 +17,7 @@ export function HeroHighlightComponent() {
           >
             <Image
               src="/avatar-4.png"
-              alt="Yacine's Avatar"
+              alt="Yacine's Avatars"
               width={140}
               height={140}
               className="rounded-full w-40 h-40 object-cover border-4 border-gray-200 dark:border-gray-700 shadow-2xl"
