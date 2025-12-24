@@ -20,17 +20,17 @@ const projects: Project[] = [
   },
   {
     title: "Must Impression",
-    image: "/must.jpg",
+    image: "/must.JPG",
     href: "https://must-impression.vercel.app/",
   },
   {
     title: "Maghreb Lab",
-    image: "/maghreb.jpg",
+    image: "/maghreb.JPG",
     href: "https://maghreblab.vercel.app/",
   },
   {
     title: "Coming Soon...",
-    image: "/pos-1.jpg",
+    image: "/pos-1.JPG",
     href: "/",
   },
 ];
