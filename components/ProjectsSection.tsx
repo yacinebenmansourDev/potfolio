@@ -29,7 +29,7 @@ const projects: Project[] = [
     href: "https://maghreblab.vercel.app/",
   },
   {
-    title: "Plateau",
+    title: "Coming Soon...",
     image: "/pos-1.jpg",
     href: "/",
   },

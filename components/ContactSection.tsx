@@ -102,7 +102,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="w-full py-24 bg-[#FEFDFB] dark:bg-black transition-colors duration-300 border-t border-neutral-200 dark:border-neutral-800"
+      className="w-full py-10 bg-[#FEFDFB] dark:bg-black transition-colors duration-300 border-t border-neutral-200 dark:border-neutral-800"
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.h2
