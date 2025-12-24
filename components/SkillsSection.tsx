@@ -1,165 +1,87 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const skills = [
   {
-    name: "HTML5",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    title: "UI / UX Design",
+    description: "Clean, intuitive interfaces focused on real user experience.",
   },
   {
-    name: "CSS3",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    title: "5+ Years Experience",
+    description: "Over five years building and delivering digital products.",
   },
   {
-    name: "JavaScript",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    title: "Product Thinking",
+    description: "Strong focus on value, scalability, and long-term vision.",
   },
   {
-    name: "TypeScript",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    title: "Performance",
+    description: "Fast, responsive, and optimized applications.",
   },
   {
-    name: "React.js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    name: "Next.js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    name: "TailwindCSS",
-    logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  {
-    name: "Node.js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  },
-  {
-    name: "Express.js",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  },
-  {
-    name: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "PostgreSQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-  },
-  {
-    name: "Supabase",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
-  },
-  {
-    name: "React Query",
-    logo: "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg",
-  },
-  {
-    name: "React Hook Form",
-    logo: "https://react-hook-form.com/images/logo/react-hook-form-logo-only.png",
-  },
-  {
-    name: "Zod",
-    logo: "https://raw.githubusercontent.com/colinhacks/zod/master/logo.svg",
-  },
-  {
-    name: "ShadCN/UI",
-    logo: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4",
-  },
-  {
-    name: "Expo",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/expo/expo-original.svg",
-  },
-  {
-    name: "Electron",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
-  },
-  {
-    name: "Git",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-  },
-  {
-    name: "GitHub",
-    logo: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-  },
-  {
-    name: "Vite",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg",
-  },
-  {
-    name: "Zustand",
-    logo: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg",
-  },
-  {
-    name: "Docker",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-  },
-  {
-    name: "Firebase",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  },
-
-  {
-    name: "Jest",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-  },
-  {
-    name: "Figma",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  },
-  {
-    name: "Postman",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+    title: "Problem Solving",
+    description: "Autonomous, analytical, and solution-driven mindset.",
   },
 ];
+
 export default function SkillsSection() {
   return (
-    <section className="w-full py-20 bg-white dark:bg-black transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4">
-          Technologies & Skills
-        </h2>
+    <section className="w-full py-10 bg-[#FEFDFB] dark:bg-black transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10">
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0A171C] dark:text-[#FEFDFB] mb-4">
+            Skills & Expertise
+          </h2>
+        </div>
 
-        <p className="text-neutral-600 dark:text-neutral-400 mb-12 max-w-2xl mx-auto">
-          Here are the tools and technologies I use to build modern, fast, and
-          scalable applications across web, mobile, and desktop platforms.
-        </p>
-
-        {/* Skills Grid */}
-        <div className="flex flex-wrap justify-center gap-4">
+        {/* Horizontal cards */}
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
           {skills.map((skill, index) => (
             <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 10 }}
+              key={skill.title}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.03 }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="group relative cursor-default rounded-full p-px text-sm font-semibold text-white shadow-2xl shadow-zinc-900"
+              className="group relative rounded-2xl p-px"
             >
-              {/* Glow background */}
-              <span className="absolute inset-0 overflow-hidden rounded-full">
-                <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              </span>
+              {/* Outer glow */}
+              <span className="absolute inset-0 rounded-2xl bg-[radial-gradient(80%_120%_at_50%_0%,rgba(56,189,248,0.45)_0%,rgba(56,189,248,0)_70%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-              {/* Inner card */}
-              <div className="relative flex items-center gap-2 z-10 rounded-full bg-zinc-100 dark:bg-zinc-950 py-1.5 px-4 ring-1 ring-white/10 transition-transform duration-300 group-hover:scale-105">
-                <Image
-                  src={skill.logo}
-                  alt={skill.name}
-                  width={18}
-                  height={18}
-                  unoptimized
-                  className="object-contain"
+              {/* Card */}
+              <div
+                className="relative z-10 h-full rounded-2xl px-6 py-6
+    bg-linear-to-br
+    from-white
+    via-slate-50
+    to-slate-100
+    dark:from-zinc-950
+    dark:via-zinc-900
+    dark:to-zinc-800
+    ring-1 ring-black/5 dark:ring-white/10
+    backdrop-blur
+    transition-all duration-300
+    group-hover:-translate-y-1
+  "
+              >
+                <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                  {skill.title}
+                </h3>
+
+                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                  {skill.description}
+                </p>
+
+                {/* Bottom accent line */}
+                <span
+                  className="pointer-events-none absolute inset-x-6 bottom-3 h-px
+      bg-linear-to-r from-transparent via-sky-400/40 to-transparent
+      opacity-0 transition-opacity duration-300 group-hover:opacity-100
+    "
                 />
-                <span className="text-sm text-zinc-900 dark:text-neutral-300 ">
-                  {skill.name}
-                </span>
               </div>
-
-              {/* Subtle underline glow */}
-              <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-cyan-400/0 via-sky-400/90 to-blue-400/0 transition-opacity duration-500 group-hover:opacity-40" />
             </motion.div>
           ))}
         </div>

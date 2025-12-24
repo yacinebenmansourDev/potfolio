@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Yacine Benmansour | Full-Stack Developer Portfolio",
   description:
-    "Discover the portfolio of Yacine Benmansour — a full-stack developer passionate about creating modern web and mobile applications using Next.js, Expo, Node.js, and Supabase. Explore projects that combine clean design, performance, and real-world functionality.",
+    "Discover the portfolio of Yacine Benmansour — a front-end developer passionate about creating modern web and mobile applications using Next.js, Expo, and Supabase. Explore projects that combine clean design, performance, and real-world functionality.",
   icons: {
-    icon: "/icon.png",
+    icon: "/yacine.png",
   },
 };
 

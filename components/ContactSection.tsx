@@ -102,14 +102,14 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="w-full py-24 bg-white dark:bg-black transition-colors duration-300 border-t border-neutral-200 dark:border-neutral-800"
+      className="w-full py-24 bg-[#FEFDFB] dark:bg-black transition-colors duration-300 border-t border-neutral-200 dark:border-neutral-800"
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-white mb-4"
+          className="text-3xl md:text-4xl font-bold text-[#0A171C] dark:text-[#FEFDFB] mb-4"
         >
           Contact Me
         </motion.h2>
