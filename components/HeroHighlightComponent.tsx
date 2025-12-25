@@ -28,7 +28,7 @@ export function HeroHighlightComponent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: [20, -5, 0] }}
             transition={{ duration: 0.6, ease: [0.4, 0.0, 0.2, 1] }}
-            className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-neutral-800 dark:text-white leading-tight max-w-4xl"
+            className="text-3xl md:text-6xl lg:text-7xl font-extrabold text-neutral-800 dark:text-white leading-tight max-w-4xl"
           >
             Hi, I&apos;m Benmansour Mohamed Yacine
             <br />

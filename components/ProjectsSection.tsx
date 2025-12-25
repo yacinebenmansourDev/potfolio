@@ -25,7 +25,7 @@ const projects: Project[] = [
   },
   {
     title: "Maghreb Lab",
-    image: "/maghreb.JPG",
+    image: "/maghreb-1.JPG",
     href: "https://maghreblab.vercel.app/",
   },
   {
@@ -37,7 +37,7 @@ const projects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="w-full py-4 bg-white dark:bg-black">
+    <section id="projects" className="w-full py-4 bg-[#FEFDFB] dark:bg-black">
       <div className="mx-auto max-w-6xl px-6 sm:px-10 space-y-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0A171C] dark:text-[#FEFDFB] mb-4">
@@ -48,7 +48,7 @@ export default function ProjectsSection() {
         {/* Projects */}
         <div className="space-y-10">
           {projects.map((p) => (
-            <div key={p.title} className="space-y-3">
+            <div key={p.title}>
               {/* Title link */}
               <Link
                 href={p.href}
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
               </Link>
 
               {/* Image (no crop) */}
-              <div className="relative w-full">
+              <div className="relative w-full m-0 lg:-mt-6">
                 <div className="relative w-full aspect-video">
                   <Image
                     src={p.image}
